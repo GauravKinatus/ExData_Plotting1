@@ -16,7 +16,7 @@
         yRange <- (target.df$Sub_metering_1)
         
         # setup the histogram and plot it in the file
-        png(filename = "./figure/plot3.png", width = 480, height = 480, units = "px", bg = "transparent")
+        png(filename = "plot3.png", width = 480, height = 480, units = "px", bg = "transparent")
         plot(target.df$datetime, target.df$Sub_metering_1, type="n", xlab="",
              ylab="Energy sub metering", bg="transparent" )
         lines(target.df$datetime, target.df$Sub_metering_1, type="l",  col="black", pch = 0 ) 

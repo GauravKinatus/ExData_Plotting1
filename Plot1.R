@@ -13,7 +13,7 @@
         target.df <- subset(df, (datetime >= "2007-02-01 00:00:00" & datetime <="2007-02-02 23:59:59"))
 
         # setup the histogram and plot it in the file
-        png(filename = "./figure/plot1.png", width = 480, height = 480, units = "px", bg = "transparent")
+        png(filename = "plot1.png", width = 480, height = 480, units = "px", bg = "transparent")
         hist(target.df$Global_active_power, col="red", main ="Global Active Power", 
              xlab ="Global Active Power (kilowatts)", breaks = 15 )
         dev.off()
